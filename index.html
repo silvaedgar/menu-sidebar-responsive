@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Uso de Calc Float y Left</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+   <nav class="my__nav shadow">
+      <button class="btn bar"> <i class="fas fa-bars" id="bars"></i>
+      </button>
+      <span class="ms-4 d-inline-block text-white "> Nombre del Modulo</span>
+      <a data-bs-toggle="collapse" href="#collapseProfile" role="button" aria-expanded="false"
+         aria-controls="collapseProfile">
+         <img src="images/user-profile.jpeg" class="image__profile" />
+      </a>
+      <div class="collapse" id="collapseProfile">
+         <dl class="collapse__ul-profile text-center">
+            <dt><a href="">Mi Perfil</a></dt>
+            <dt><a href="">Cerrar Sesión</a></dt>
+            </ul>
+      </div>
+   </nav>
+
+   <aside class="sidebar shadow-lg " id="sidebar">
+      <div class="header__sidebar">
+         <div class="text-center p-3">
+            <img src="images/vesil.png" width="20" height="20" alt="Vesil C.A" />
+            <span style="font-size: 20px">Vesil C.A</span>
+         </div>
+         <div class="text-sm ">
+            <span style="font-size: 12px; color: black"> Usuario: Edgar Silva</span>
+            <a href="#" class="float-end mt-1 me-2 cursor-pointer" style="font-size: 12px; ">
+               Salir
+               <i class="fa-solid fa-right-from-bracket float-end ms-2" style="margin-top: 5px"></i></a>
+         </div>
+         <hr>
+      </div>
+
+      <div class="container ms-3">
+         <a class="sidebar__link" href="#Home">Home</a>
+      </div>
+
+      <div class="container ms-3">
+         <a class="sidebar__link" href="#forms">Forms</a>
+      </div>
+
+      <div class="container ms-3">
+         <a class="sidebar__link" href="#data-table">Data Table</a>
+      </div>
+
+      <div class="container ms-3">
+         <a class="sidebar__link" data-bs-toggle="collapse" href="#level" role="button" aria-expanded="true"
+            aria-controls="level" id="sublevel-1">
+            Elementos Form
+            <i class="fa fa-caret-up sidebar__caret ms-3" aria-hidden="true" id="caret-sublevel-1"></i>
+         </a>
+
+      </div>
+      <div class="collapse" id="level">
+         <ul class="sidebar__dropdown">
+            <li> <a href="" class="sidebar__dropdown-link">Input</a></li>
+            <li> <a href="" class="sidebar__dropdown-link">Select</a></li>
+            <li> <a href="" class="sidebar__dropdown-link">Check</a></li>
+            <li> <a href="" class="sidebar__dropdown-link">Radio</a></li>
+
+         </ul>
+      </div>
+
+   </aside>
+   <div class="content bg-info" id="content">
+      <div class="card cardHeader mx-auto">
+         <div class="row">
+            <div class="col-sm-3">
+               <span> Titulo </span>
+            </div>
+            <div class="col-sm-3">
+               <span> SubTitulo </span>
+            </div>
+            <div class="col-sm-6">
+               <button class="btn btn-info float-end">Boton 1</button>
+               <button class="btn btn-info float-end me-3">Boton 2</button>
+               <button class="btn btn-info float-end me-3">Boton 3</button>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-4">
+               Titulo 1
+
+            </div>
+            <div class="col-sm-6">
+               subtitulo1
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12">
+               <span class="d-block bg-yellow text-danger"> Mensaje de Error</span>
+            </div>
+         </div>
+      </div>
+      <div class="cardBody mx-auto mt-3">
+         <span>Nombre: </span>
+         <input type="text" class="form-control w-25 d-inline">
+         <select class="form-select w-25 d-inline">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+            <option value="4">Opcion 4</option>
+         </select>
+      </div>
+   </div>
+</body>
+<script src="js/my-menu.js"></script>
+
+</html>
